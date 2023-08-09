@@ -1,0 +1,42 @@
+@media (max-width: 75em) {
+  .howItWork-text-box {
+    max-width: 80%;
+  }
+  
+  .MacbookPro-img {
+ /* padding-left: 4rem; */
+ object-fit: fill;
+  }
+
+  
+
+.cube-img {
+   max-width: 22rem;
+   width: 100%;
+   bottom: 3rem;
+}
+}
+
+@media (max-width: 59em) {
+  
+
+.cube-img {
+   max-width: 18rem;
+   width: 100%;
+   bottom: 7rem;
+}
+
+.howItWork-text-box {
+    max-width: 90%;
+  }
+
+  .download-section,
+.facts-section {
+   /* padding: 0 3rem; */
+   max-width: 80%;
+}
+
+.download-section::before, .facts-section::before {
+   height: 70%;
+}
+}

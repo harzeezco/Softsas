@@ -9,16 +9,15 @@
       rel="stylesheet"
     />
 
-    <!-- <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    
     <title>Document</title>
   </head>
   <body>
@@ -43,26 +42,27 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="hero-section">
+      <div class="hero-section">
         <div class="hero-box container grid-center grid-medium-gap">
           <h1 class="heading-primary">
             We will help you create <br />
             the software of your choice
           </h1>
           <a href="#" class="btn btn-box">Get Started Now</a>
-        </div>
-      </section>
 
-      <section class="hero-img-box">
-        <figure>
-          <img
-            class="laptop-img"
-            src="img/img.png"
-            alt="A laptop image showing a dashboard"
-          />
-          <img class="cube-img" src="img/cube.png" alt="A cube image" />
-        </figure>
-      </section>
+          <figure>
+            <img
+              class="laptop-img"
+              src="img/img.png"
+              alt="A laptop image showing a dashboard"
+            />
+
+            <img class="cube-img" src="img/cube.png" alt="A cube image" />
+          </figure>
+        </div>
+      </div>
+
+      <section class="hero-img-box"></section>
 
       <!-- Features Section -->
       <section class="features-section container margin-secondary">
@@ -159,6 +159,7 @@
                 </p>
               </div>
             </article>
+
             <article class="howItWork-01 margin-b-secondary margin-tertiary">
               <p class="heading-tertiary num">02</p>
               <div>
@@ -172,6 +173,7 @@
                 </p>
               </div>
             </article>
+
             <article class="howItWork-01 margin-b-secondary margin-tertiary">
               <p class="heading-tertiary num">03</p>
               <div>
@@ -200,9 +202,13 @@
             <article class="question-box">
               <div class="question flex">
                 <h4>Completely Responsive.</h4>
-                <button class="question-btn">
-                  <span>-</span>
-                  <span>+</span>
+                <button class="question-btn" aria-label="toggle">
+                  <span class="minus-icon"
+                    ><i class="fa-solid fa-minus"></i
+                  ></span>
+                  <span class="plus-icon"
+                    ><i class="fa-solid fa-plus"></i
+                  ></span>
                 </button>
               </div>
               <p class="text question-text">
@@ -211,43 +217,58 @@
                 for landing site building.
               </p>
             </article>
+
             <article class="question-box">
               <div class="question flex">
                 <h4>free lifetime updates.</h4>
-                <button class="question-btn">
-                  <span>-</span>
-                  <span>+</span>
+                <button class="question-btn" aria-label="toggle">
+                  <span class="minus-icon"
+                    ><i class="fa-solid fa-minus"></i
+                  ></span>
+                  <span class="plus-icon"
+                    ><i class="fa-solid fa-plus"></i
+                  ></span>
                 </button>
               </div>
-              <p class="text question-text none">
+              <p class="text question-text">
                 AeroLand appears professional in design and responsive in
                 performance. It proves to be highly customizable and efficient
                 for landing site building.
               </p>
             </article>
+
             <article class="question-box">
               <div class="question flex">
                 <h4>excellent customer support.</h4>
-                <button class="question-btn">
-                  <span>-</span>
-                  <span>+</span>
+                <button class="question-btn" aria-label="toggle">
+                  <span class="minus-icon"
+                    ><i class="fa-solid fa-minus"></i
+                  ></span>
+                  <span class="plus-icon"
+                    ><i class="fa-solid fa-plus"></i
+                  ></span>
                 </button>
               </div>
-              <p class="text question-text none">
+              <p class="text question-text">
                 AeroLand appears professional in design and responsive in
                 performance. It proves to be highly customizable and efficient
                 for landing site building.
               </p>
             </article>
+
             <article class="question-box">
               <div class="question flex">
                 <h4>easy & user friendly service.</h4>
-                <button class="question-btn">
-                  <span>-</span>
-                  <span>+</span>
+                <button class="question-btn" aria-label="toggle">
+                  <span class="minus-icon"
+                    ><i class="fa-solid fa-minus"></i
+                  ></span>
+                  <span class="plus-icon"
+                    ><i class="fa-solid fa-plus"></i
+                  ></span>
                 </button>
               </div>
-              <p class="text question-text none">
+              <p class="text question-text">
                 AeroLand appears professional in design and responsive in
                 performance. It proves to be highly customizable and efficient
                 for landing site building.
@@ -267,19 +288,21 @@
       <section class="facts-section container margin-primary margin-b-primary">
         <div class="facts-wrapper flex">
           <div class="facts-text-box">
-            <h1 class="heading-primary facts-count">80k+</h1>
+            <h1 class="heading-primary facts-count"  data-value="1500">0</h1>
             <h3>total download</h3>
           </div>
           <div class="facts-text-box">
-            <h1 class="heading-primary facts-count">25k+</h1>
+            <h1 class="heading-primary facts-count"  data-value="3000">0</h1>
             <h3>happy users</h3>
           </div>
           <div class="facts-text-box">
-            <h1 class="heading-primary facts-count">35k+</h1>
+            <h1 class="heading-primary facts-count"  data-value="700">0</h1>
             <h3>great reviews</h3>
           </div>
         </div>
       </section>
+
+      <!-- Work Progress -->
 
       <section class="workProgress container margin-primary">
         <h4 class="title text-center">WORK PROCESS</h4>
@@ -293,7 +316,7 @@
             <img
               src="img/icons/user.svg"
               class="workProgress-icon margin-b-secondary"
-              alt=""
+              alt="A user icon"
             />
             <h3 class="heading-tertiary margin-b-tertiary">create account</h3>
             <p class="text question-text">
@@ -306,7 +329,7 @@
             <img
               src="img/icons/monitor.svg"
               class="workProgress-icon margin-b-secondary"
-              alt=""
+              alt="An icon showing a monitor"
             />
             <h3 class="heading-tertiary margin-b-tertiary">computer boots</h3>
             <p class="text question-text">
@@ -319,7 +342,7 @@
             <img
               src="img/icons/monitorSetup.svg"
               class="workProgress-icon margin-b-secondary"
-              alt=""
+              alt="An icon showing a monitor setup"
             />
             <h3 class="heading-tertiary margin-b-tertiary">computer setup</h3>
             <p class="text question-text">
@@ -342,12 +365,14 @@
           class="pricing-wrapper flex-around margin-secondary grid-medium-gap"
         >
           <div class="pricing-box text-center">
-            <h1
-              class="heading-secondary fw-medium margin-b-tertiary text-center transition"
-            >
-              free
-            </h1>
-            <h2 class="price fw-medium"><span>$</span>0<span>/mo</span></h2>
+            <header>
+              <h1
+                class="heading-secondary fw-medium margin-b-tertiary text-center transition"
+              >
+                free
+              </h1>
+              <h2 class="price fw-medium">0<span>/mo</span></h2>
+            </header>
 
             <ul class="flex-column grid-small-gap">
               <li class="text fw-medium color-grey-secondary">
@@ -377,13 +402,15 @@
           </div>
 
           <div class="pricing-box text-center">
-            <h1
-              class="heading-secondary transition fw-medium margin-b-tertiary text-center"
-            >
-              free
-            </h1>
+            <header>
+              <h1
+                class="heading-secondary transition fw-medium margin-b-tertiary text-center"
+              >
+                standard
+              </h1>
 
-            <h2 class="price fw-medium"><span>$</span>0<span>/mo</span></h2>
+              <h2 class="price fw-medium">99<span>/mo</span></h2>
+            </header>
 
             <ul class="flex-column grid-small-gap">
               <li class="text fw-medium color-grey-secondary">
@@ -413,12 +440,14 @@
           </div>
 
           <div class="pricing-box text-center">
-            <h1
-              class="heading-secondary fw-medium margin-b-tertiary text-center transition"
-            >
-              free
-            </h1>
-            <h2 class="price fw-medium"><span>$</span>0<span>/mo</span></h2>
+            <header>
+              <h1
+                class="heading-secondary fw-medium margin-b-tertiary text-center transition"
+              >
+                premium
+              </h1>
+              <h2 class="price fw-medium">350<span>/mo</span></h2>
+            </header>
 
             <ul class="flex-column grid-small-gap">
               <li class="text fw-medium color-grey-secondary">
@@ -453,16 +482,22 @@
       <section class="testimonials margin-primary howItWork-section">
         <div class="testimonials-wrapper container grid-center grid--col-2">
           <article class="testimonials-text-box">
-            <blockquote class="margin-b-tertiary">
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi"
-            </blockquote>
+            <blockquote
+              class="margin-b-tertiary testimonials-quote"
+            ></blockquote>
 
-            <h3 class="text">Hassan mahmoud</h3>
-            <p class="text profession"><span>Ui/ux</span> Designer</p>
+            <h3 class="text testimonials-name"></h3>
+            <p class="text profession"></p>
+            <div>
+              <button class="arrow-btn prev-btn">
+                <img src="img/icons/leftArrow.svg" alt="A left Arrow" />
+              </button>
 
-            
+              <button class="arrow-btn next-btn">
+                <img src="img/icons/rightArrow.svg" alt="A Right Arrow" />
+              </button>
+            </div>
+            `
           </article>
 
           <img
@@ -472,6 +507,151 @@
           />
         </div>
       </section>
+
+      <!-- Blog Post -->
+
+      <section class="blog margin-primary margin-b-primary">
+        <h4 class="title text-center">BLOG POST</h4>
+        <h1 class="heading-secondary margin-b-primary text-center">
+          Latest insight post the our company
+        </h1>
+        <div class="container flex-around grid-medium-gap">
+          <article class="blog-box">
+            <img
+              src="img/blog/blogImage-02.png"
+              alt="A blog Image showing a laptop"
+            />
+            <span class="blog-date margin-b-tertiary">22 april 2021</span>
+            <p class="blog-title">
+              Best domin name for student ever personalised...
+            </p>
+          </article>
+          <article class="blog-box">
+            <img
+              src="img/blog/blogImage-03.png"
+              alt="A blog Image showing a laptop"
+            />
+            <span class="blog-date margin-b-secondary">22 april 2021</span>
+            <p class="blog-title">
+              Saas landing page solution for loans our company...
+            </p>
+          </article>
+          <article class="blog-box">
+            <img
+              src="img/blog/blogImage-O1.png"
+              alt="A blog Image showing a laptop"
+            />
+            <span class="blog-date margin-b-tertiary">22 april 2022</span>
+            <p class="blog-title">Custom platform for insurane an audit...</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Download -->
+
+      <section class="download-section container margin-b-primary">
+        <div class="download-wrapper grid-center grid--col-2">
+          <img
+            src="img/appDownload.png"
+            class=""
+            alt="A laptop image showing the dowmload app"
+          />
+
+          <div class="download-text-box">
+            <h1 class="heading-primary">Download now & enjoy new features</h1>
+
+            <div class="btn-box"><a href="#" class="btn">download</a></div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+
+    <footer class="footer container margin-primary margin-b-primary">
+      <div class="footer-wrapper container">
+        <div>
+          <img
+            src="img/footerLogo.png"
+            class="logo margin-b-secondary"
+            alt="Softsas Logo"
+          />
+
+          <p class="text">
+            Landing page builder is a hosted platform powered by the brizy
+            builder aiming to connect you with potential clients.
+          </p>
+        </div>
+
+        <nav class="footer-nav">
+          <p class="footer-header margin-b-secondary">Company</p>
+
+          <ul class="footer-navList">
+            <li class="text"><a href="#">about us</a></li>
+            <li class="text"><a href="#">our team</a></li>
+            <li class="text"><a href="#">products</a></li>
+            <li class="text"><a href="#">contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav">
+          <p class="footer-header margin-b-secondary">product</p>
+
+          <ul class="footer-navList">
+            <li class="text"><a href="#">Feature</a></li>
+            <li class="text"><a href="#">pricing</a></li>
+            <li class="text"><a href="#">credit</a></li>
+            <li class="text"><a href="#">fAQ</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav">
+          <p class="footer-header margin-b-secondary">download</p>
+
+          <ul class="footer-navList">
+            <li class="text"><a href="#">IOS</a></li>
+            <li class="text"><a href="#">android</a></li>
+            <li class="text"><a href="#">microsoft</a></li>
+            <li class="text"><a href="#">Desktop</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav">
+          <p class="footer-header margin-b-secondary">support</p>
+
+          <ul class="footer-navList">
+            <li class="text"><a href="#">privacy</a></li>
+            <li class="text"><a href="#">help</a></li>
+            <li class="text"><a href="#">terms</a></li>
+            <li class="text"><a href="#">fAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <hr />
+
+      <!-- Copyright -->
+
+      <div class="copyright flex">
+        <p>Copyright ©<span class="date"></span> <span class="company-name">softsas.</span> All Rights Reserved</p>
+
+        <ul class="socials flex-around grid-small-gap">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script defer src="js/script.js"></script>
   </body>
 </html>

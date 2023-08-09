@@ -1,4 +1,4 @@
-# Ecommerce
+# Saas Landing Page
 
 > The main objective of this project is to build a simple ecommerce webpage with a search results page.
 
@@ -17,13 +17,14 @@ This project demonstrates a simple design for an ecommerce website with search r
 
   - CSS Flexbox
 
-  - CSS Media Query
+  - CSS Grid
 
-- [Bootstrap framework](https://getbootstrap.com/)
+  - CSS Media Query
+  
+
 
 - [stylint](https://stylelint.io/)
 
-- [NPM](https://www.npmjs.com/)
 
 ## Live Demo
 
@@ -34,7 +35,7 @@ This project demonstrates a simple design for an ecommerce website with search r
 - Clone the project
 
 ```bash
-git clone https://github.com/adejam/ecommerce.git
+git clone https://github.com/harzeezco/Softsas.git
 
 ```
 
@@ -82,11 +83,11 @@ npm run html-validator
 
 ## 👤 Author
 
-### Adeleye Jamiu
+### Wakil Azeez
 
-- Github: [@adejam](http://github.com/adejam)
-- Twitter: [@adeleye_oj](https://twitter.com/Adeleye_oj)
-- LinkedIn: [@adeleye-jamiu](https://linkedin.com/in/adeleye-jamiu)
+- Github: [@harzeezco](https://github.com/harzeezco)
+- Twitter: [@harzeezco](https://twitter.com/Wkhayzed)
+- INSTAGRAM: [@adeleye-jamiu](https://www.instagram.com/wakil_abdul_azeez/)
 
 ## 🤝 Contributing
 
